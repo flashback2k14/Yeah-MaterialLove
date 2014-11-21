@@ -6,7 +6,7 @@
 
     <!-- Example: CardView -->
     <android.support.v7.widget.CardView
-        android:id="@+id/cvFirst"
+        android:id="@+id/cvWelcomeOne"
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
@@ -67,7 +67,6 @@
                 app:textWeight="normal"/>
 
         </LinearLayout>
-
     </android.support.v7.widget.CardView>
 
     <!-- Example: FloatingActionButton -->

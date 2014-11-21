@@ -50,10 +50,9 @@ public class GithubIssusFragment extends Fragment {
         selectableFragments = this.getArguments().getStringArray("menuItems");
         /**
          * Webview
-         * https://github.com/I-am-Reinvented/ToolbarMenudrawer/issues/new
          */
         wv = (WebView) v.findViewById(R.id.wvGithubIssuse);
-        wv.loadUrl("https://github.com/flashback2k14");
+        wv.loadUrl("https://github.com/flashback2k14/Yeah-MaterialLove/issues/new");
         wv.getSettings().setJavaScriptEnabled(true);
         wv.clearCache(true);
 

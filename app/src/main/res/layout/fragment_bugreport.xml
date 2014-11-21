@@ -8,55 +8,55 @@
 
     <!-- Example: CardView -->
     <android.support.v7.widget.CardView
-        android:id="@+id/cvBugreport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:clickable="true"
-        android:elevation="10dp">
+    android:id="@+id/cvBugreport"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:elevation="10dp">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvBugreportTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/theme_window_background"
+            android:background="@color/theme_default_primary_dark"
+            android:textSize="40sp"
+            android:text="Bugreport"
+            app:fontFamily="roboto_slab"
+            app:textWeight="normal"/>
 
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/tvBugreportTitle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:gravity="center"
-                android:textColor="@color/theme_window_background"
-                android:background="@color/theme_default_primary_dark"
-                android:textSize="40sp"
-                android:text="Bugreport"
-                app:fontFamily="roboto_slab"
-                app:textWeight="normal"/>
+        <com.devspark.robototextview.widget.RobotoEditText
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/etBugreportkMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:textColor="@color/theme_default_primary_dark"
+            android:text="Enter your Bugreport:\nuseful information\nPhone:\nAndroid-OS:\nPro:\nCon:\nSuggestions:\nBugs:"
+            android:layout_weight="1"
+            app:fontFamily="roboto_slab"
+            app:textWeight="normal"/>
 
-            <com.devspark.robototextview.widget.RobotoEditText
-                xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/etBugreportkMessage"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="5dp"
-                android:gravity="top|left"
-                android:inputType="textMultiLine"
-                android:singleLine="false"
-                android:lines="8"
-                android:minLines="6"
-                android:maxLines="10"
-                android:scrollbars="vertical"
-                android:scrollbarStyle="insideInset"
-                android:textColor="@color/theme_default_primary_dark"
-                android:text="Enter your Bugreport:\nuseful information\nPhone:\nAndroid-OS:\nPro:\nCon:\nSuggestions:\nBugs:"
-                android:layout_weight="1"
-                app:fontFamily="roboto_slab"
-                app:textWeight="normal"/>
-
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
 
     <com.melnykov.fab.FloatingActionButton
         xmlns:fab="http://schemas.android.com/apk/res-auto"

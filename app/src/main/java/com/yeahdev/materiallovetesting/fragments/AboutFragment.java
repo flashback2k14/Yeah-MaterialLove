@@ -2,16 +2,22 @@ package com.yeahdev.materiallovetesting.fragments;
 
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.devspark.robototextview.widget.RobotoTextView;
 import com.melnykov.fab.FloatingActionButton;
 import com.williammora.snackbar.Snackbar;
 import com.yeahdev.materiallovetesting.R;
+import com.yeahdev.materiallovetesting.adapter.AboutAdapter;
+import com.yeahdev.materiallovetesting.adapter.CoveredTechnicAdapter;
 import com.yeahdev.materiallovetesting.interfaces.IPassSelectedFragmentFromFAB;
 
 
@@ -43,6 +49,26 @@ public class AboutFragment extends Fragment {
          */
         selectableFragments = this.getArguments().getStringArray("menuItems");
         /**
+         *
+         */
+        final RobotoTextView tvAboutSourceZero = (RobotoTextView) v.findViewById(R.id.tvAboutSourceZero);
+        tvAboutSourceZero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(tvAboutSourceZero.getText().toString())));
+            }
+        });
+        /**
+         * ListView Covered Technics
+         */
+        ListView lvCoveredThings = (ListView) v.findViewById(R.id.lvCoveredThings);
+        lvCoveredThings.setAdapter(new CoveredTechnicAdapter(getActivity()));
+        /**
+         * ListView Libraries
+         */
+        ListView lvAbout = (ListView) v.findViewById(R.id.lvAbout);
+        lvAbout.setAdapter(new AboutAdapter(getActivity()));
+        /**
          * Floating Action Button Love
          * Material Dialog Love
          */
@@ -66,6 +92,7 @@ public class AboutFragment extends Fragment {
                         .show();
             }
         });
+        fab.attachToListView(lvAbout);
         /**
          * Return View
          */

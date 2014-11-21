@@ -9,14 +9,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.afollestad.materialdialogs.Theme;
 import com.melnykov.fab.FloatingActionButton;
 import com.williammora.snackbar.Snackbar;
 import com.yeahdev.materiallovetesting.R;
+import com.yeahdev.materiallovetesting.adapter.CoveredTechnicAdapter;
 import com.yeahdev.materiallovetesting.interfaces.IPassSelectedFragmentFromFAB;
 
 
@@ -49,8 +50,6 @@ public class WelcomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_welcome, container, false);
         /**
          * Set G+ Data to Profile Card
-         */
-        /**
          * Init TextViews
          */
         TextView tvCardPersonName = (TextView) v.findViewById(R.id.tvWelcomePersonName);

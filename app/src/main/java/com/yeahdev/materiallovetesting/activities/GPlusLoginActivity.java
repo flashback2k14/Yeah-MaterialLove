@@ -88,7 +88,7 @@ public class GPlusLoginActivity extends ActionBarActivity implements View.OnClic
          */
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
-            toolbar.setTitle("G+ Login Example");
+            toolbar.setTitle("Login");
             setSupportActionBar(toolbar);
         }
         /**

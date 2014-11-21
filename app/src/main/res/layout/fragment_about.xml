@@ -4,11 +4,162 @@
     android:layout_height="match_parent"
     tools:context="com.yeahdev.materiallovetesting.fragments.AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- CardView Collection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
 
+        <!-- Example: CardView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAboutZero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tvAboutTitleZero"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/theme_window_background"
+                    android:background="@color/theme_accent"
+                    android:textSize="15sp"
+                    android:text="App Source Code"
+                    android:elevation="10dp"
+                    app:fontFamily="roboto_slab"
+                    app:textWeight="normal"/>
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tvAboutSourceZero"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/theme_default_primary_dark"
+                    android:textSize="15sp"
+                    android:text="https://github.com/flashback2k14/Yeah-MaterialLove"
+                    android:elevation="10dp"
+                    app:fontFamily="roboto_slab"
+                    app:textWeight="normal"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Example: CardView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAboutOne"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tvAboutTitleOne"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/theme_window_background"
+                    android:background="@color/theme_accent"
+                    android:textSize="15sp"
+                    android:text="Covered Technic"
+                    android:elevation="10dp"
+                    app:fontFamily="roboto_slab"
+                    app:textWeight="normal"/>
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvCoveredThings"
+                    android:choiceMode="singleChoice"
+                    android:background="@color/cardview_light_background"
+                    android:divider="#00000000"
+                    android:dividerHeight="1.00dp"
+                    android:elevation="2dp"
+                    android:listSelector="@drawable/drawer"
+                    android:longClickable="false"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Example: CardView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAboutTwo"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tvAboutTitleTwo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/theme_window_background"
+                    android:background="@color/theme_accent"
+                    android:textSize="15sp"
+                    android:text="Used Libraries"
+                    android:elevation="10dp"
+                    app:fontFamily="roboto_slab"
+                    app:textWeight="normal"/>
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lvAbout"
+                    android:layout_margin="10dp"
+                    android:choiceMode="singleChoice"
+                    android:background="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="5.00dp"
+                    android:elevation="2dp"
+                    android:listSelector="@drawable/drawer"
+                    android:longClickable="false"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <!-- Example: FloatingActionButton -->
     <com.melnykov.fab.FloatingActionButton
         xmlns:fab="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fabAbout"

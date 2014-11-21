@@ -51,19 +51,7 @@ import java.io.InputStream;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/**
- * Tutorial:
- * http://www.androidhive.info/2014/02/android-login-with-google-plus-account-1/
- * LIBS:
- * https://github.com/ribot/easy-adapter
- * https://github.com/makovkastar/FloatingActionButton
- * https://github.com/wmora/snackbar
- * https://github.com/afollestad/material-dialogs
- * https://github.com/jgilfelt/SystemBarTint
- * https://github.com/hdodenhof/CircleImageView
- * https://github.com/johnkil/Android-RobotoTextView
- * https://github.com/amlcurran/ShowcaseView
- */
+
 public class MainActivity extends ActionBarActivity implements IPassSelectedFragmentFromFAB {
     // declare variables
     // toolbar
@@ -219,14 +207,20 @@ public class MainActivity extends ActionBarActivity implements IPassSelectedFrag
                             @Override
                             public void onPositive(MaterialDialog dialog) {
                                 setArgumentsToFragmentAndReplace(ft, githubIssueFragment, "Github Issues");
-                                getSupportFragmentManager().beginTransaction().replace(R.id.contentFrame, githubIssueFragment).commit();
+                                getSupportFragmentManager()
+                                        .beginTransaction()
+                                        .replace(R.id.contentFrame, githubIssueFragment)
+                                        .commit();
                             }
                             @Override
                             public void onNeutral(MaterialDialog dialog) {}
                             @Override
                             public void onNegative(MaterialDialog dialog) {
                                 setArgumentsToFragmentAndReplace(ft, bugreportFragment, "Bugreport");
-                                getSupportFragmentManager().beginTransaction().replace(R.id.contentFrame, bugreportFragment).commit();
+                                getSupportFragmentManager()
+                                        .beginTransaction()
+                                        .replace(R.id.contentFrame, bugreportFragment)
+                                        .commit();
                             }
                         })
                         .build()
