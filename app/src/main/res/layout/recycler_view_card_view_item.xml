@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRecyclerViewItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    card_view:cardCornerRadius="4dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tvRecyclerViewCardViewTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/theme_window_background"
+            android:background="@color/theme_default_primary_dark"
+            android:textSize="40sp"
+            android:text="Title"
+            app:fontFamily="roboto_slab"
+            app:textWeight="normal"/>
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tvRecyclerViewCardViewContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/theme_default_primary_dark"
+            android:background="@color/theme_window_background"
+            android:textSize="20sp"
+            app:typeface="roboto_slab_thin"
+            android:text="Content" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

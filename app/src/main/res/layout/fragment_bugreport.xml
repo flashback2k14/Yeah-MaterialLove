@@ -1,0 +1,74 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yeahdev.materiallovetesting.fragments.BugreportFragment">
+
+    <!-- Example: CardView -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvBugreport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/tvBugreportTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/theme_window_background"
+                android:background="@color/theme_default_primary_dark"
+                android:textSize="40sp"
+                android:text="Bugreport"
+                app:fontFamily="roboto_slab"
+                app:textWeight="normal"/>
+
+            <com.devspark.robototextview.widget.RobotoEditText
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/etBugreportkMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:lines="8"
+                android:minLines="6"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideInset"
+                android:textColor="@color/theme_default_primary_dark"
+                android:text="Enter your Bugreport:\nuseful information\nPhone:\nAndroid-OS:\nPro:\nCon:\nSuggestions:\nBugs:"
+                android:layout_weight="1"
+                app:fontFamily="roboto_slab"
+                app:textWeight="normal"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.melnykov.fab.FloatingActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fabBugreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:elevation="10dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_content_add"
+        fab:fab_colorNormal="@color/theme_accent"
+        fab:fab_colorPressed="@color/theme_default_primary"
+        fab:fab_colorRipple="@color/ripple" />
+
+</FrameLayout>

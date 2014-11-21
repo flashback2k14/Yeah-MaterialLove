@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <!-- Toolbar Effect -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/theme_default_primary</item>
+        <!-- Status bar color-->
+        <item name="colorPrimaryDark">@color/theme_default_primary_dark</item>
+        <!-- Window color-->
+        <item name="colorAccent">@color/theme_accent</item>
+        <item name="android:windowBackground">@color/theme_window_background</item>
+        <!-- Drawer Style-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+    </style>
+
+    <!-- Definition Drawer Style -->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!--
+       <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+           <item name="spinBars">false</item>
+           <item name="color">@android:color/black</item>
+       </style>
+    -->
+</resources>

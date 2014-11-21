@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activities -->
+    <string name="app_name">Yeah!\nMaterial Love</string>
+    <string name="title_activity_gplus_login">GPlusLoginActivity</string>
+    <!-- Blindtext -->
+    <string name="hello_world">Hello world!</string>
+    <!-- Menu Text -->
+    <string name="action_settings">Settings</string>
+    <!-- Drawer Menu -->
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Transaction -->
+    <string name="transaction_to_mainview">"TransactionToMainView</string>
+</resources>
